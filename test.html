@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Image to Canvas Using image() Object</title>
+</head>
+<body>
+     <canvas id="myCanvas" width="578" height="200"></canvas>
+</body>
+
+<script>
+   
+    
+      var canvas = document.getElementById('myCanvas');
+      var context = canvas.getContext('2d');
+      var x = 188;
+      var y = 30;
+      var width = 400;
+      var height = 300;
+      var imageObj = new Image();
+
+      imageObj.onload = function() {
+        context.drawImage(imageObj, 0, 0);
+      };
+      imageObj.src = 'chef.jpg';
+    </script>
+</script>
+</html>

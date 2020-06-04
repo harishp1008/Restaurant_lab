@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<title>Cinnamon's Restaurant</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="css/mystyle.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
+.w3-bar-block .w3-bar-item {padding:20px}
+</style>
+<body>
+<!-- Top menu -->
+<div class="w3-top">
+  <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto; background-color: #888888;">
+    <div class="w3-button w3-padding-16 w3-left"> <a href="https://www.bellmontrestaurant.com/">
+<img src="meat.png" width="40px" height="35px" alt="LOGO">
+</a>
+    </div>
+    <div class="w3-button w3-right w3-padding-16">Menu</div>
+    <div class="w3-button w3-right w3-padding-16" style="margin-right: 20px">Contact</div>
+    <div class="w3-center w3-padding-16">Cinnamon's Restaurant</div>
+  </div>
+</div>
+  
+<!-- !PAGE CONTENT! -->
+
+
+<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+	<div class="w3-container w3-padding-32 w3-center" >  
+    <h3>Who we are?</h3><br>
+    <a href="https://www.bellmontrestaurant.com/">
+
+   <canvas id="myCanvas" width="578" height="400"></canvas>
+    </a>
+    <div class="w3-padding-32">
+      <h4><b>We Who We Are!</b></h4>
+      <h6><i>With Passion For Real, Good Food</i></h6>
+      <p>Just we, exploring the universe of unknownment. We have a heart of love and an interest of towards the food. we want to share Our art of food with you. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+    <div class="w3-quarter" style="margin-right: 130px"  style="box-sizing: border-box; border: 1px solid black;">
+    	
+     <h3 style="margin-top: 0px">Today's Special</h3>
+     <img src="dish1.jpg" alt="Steak" style="width:100%">
+<table border="1px"style="margin-left: 30px; margin-top: 20px">
+	<caption>List of Dishes</caption>
+  <thead>
+    <tr>
+      <th>Dish</th>
+      <th>Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Catalan sausage </td>
+      <td>9 EUR</td>
+    </tr>
+    <tr>
+      <td>Paella Valenciana</td>
+      <td>10 EUR</td>
+    </tr>
+    <tr>
+      <td>Gazpacho</td>
+      <td>12EUR</td>
+    </tr>
+    <tr>
+      <td>Churros.</td>
+      <td>10 EUR</td>
+    </tr>
+  </tbody>
+</table>
+    </div>
+    <div class="w3-quarter">
+      
+      <h3 style="margin-top: 0px">Our Meal</h3>
+      <iframe src="menucard.png" width="350" height="300" title="Menu Card">
+</iframe>
+<p>You can find world tastiest food here</p>
+     
+    </div>
+    <div class="w3-quarter" style="margin-left: 130px">
+    	     <h3 style="margin-top: 0px">No Contact Delivery</h3>
+      <img src="delivery.jpg" width="250px" height="155px"/><p>Want a delicious meal, but no time we will deliver it hot and yummy at your door step</p>
+    </div>
+    
+  </div>
+  
+  
+  
+  <hr id="about">
+  <!-- Footer -->
+  
+
+<!-- End page content -->
+</div>
+
+<script>
+  var canvas = document.getElementById('myCanvas');
+      var context = canvas.getContext('2d');
+      var imageObj = new Image();
+
+      imageObj.onload = function() {
+        context.drawImage(imageObj, 42, 0);
+      };
+      imageObj.src = 'chef.jpg';
+    </script>
+    
+    
+</script>
+
+</body>
+</html>
