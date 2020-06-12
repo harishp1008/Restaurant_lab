@@ -1,27 +1,34 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Add Image to Canvas Using image() Object</title>
-</head>
-<body>
-     <canvas id="myCanvas" width="578" height="200"></canvas>
-</body>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
-<script>
-   
-    
-      var canvas = document.getElementById('myCanvas');
-      var context = canvas.getContext('2d');
-      var x = 188;
-      var y = 30;
-      var width = 400;
-      var height = 300;
-      var imageObj = new Image();
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
 
-      imageObj.onload = function() {
-        context.drawImage(imageObj, 0, 0);
-      };
-      imageObj.src = 'chef.jpg';
-    </script>
-</script>
-</html>
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="modal" data-target="#nav-modal" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>    
+
+  </div>
+</nav>
+
+<!-- Modal -->
+<div class="modal fade" id="nav-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-nav-content">
+      <div class="modal-nav-body">
+        <ul>
+          <li>Brand</li>
+          <li>Home</li>
+          <li>Tour</li>
+          <li>News</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

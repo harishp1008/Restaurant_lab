@@ -1,0 +1,70 @@
+<!--With text input, radio button input, Check box, drop down list with pre selected value, password input, and Input type date – with date picker – along with possible attributes for each. Demonstrate any five form elements apart from input types specific to HTML5.-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="css/mystyle.css">
+ 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="css/signupstyles.css">
+</head>
+<body>
+  <!-- Top menu -->
+<div class="w3-top">
+  <div class="w3-white w3-xlarge" style="max-width:100%;margin:auto; background-color: #b4f2e1;">
+    <div class="w3-button w3-padding-16 w3-left"> <a href="https://www.bellmontrestaurant.com/">
+<img src="meat.png" width="40px" height="35px" alt="LOGO">
+</a>
+    </div>
+    <div class="w3-button w3-right w3-padding-16">Delivery</div>
+    <div class="w3-button w3-right w3-padding-16" style="margin-right: 20px">our  Menu</div>
+    <div class="w3-center w3-padding-16" style="margin-left: 14%">Cinnamon's Restaurant</div>
+  </div>
+</div>
+  
+	<div id="login-box">
+    <div class="left">
+      <img src="coworkpage.jpg" width="350px" height="550px">
+    
+  </div>
+  <div class="right">
+    <h1><u>Sign Up</u></h1>
+    
+    <input type="text" name="name" placeholder="Name" />
+    <input type="email" name="email"  pattern=".+@gmail.com" placeholder="E-mail"  />
+    <input type="tel" name="phno"  placeholder="Phone number"  pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
+       required />
+    
+    
+  <p>Choose a time for your space:</p>
+  
+<label for="start-time">From:</label>
+ <input type="datetime-local" id="start-time"
+       name="start-time" value="2020-06-12T19:30">
+       <label for="End-time">To:</label>
+
+<input type="datetime-local" id="End-time"
+       name="End-time" value="2018-06-12T19:30">
+
+<label for="Purpose">Purpose:</label>
+<select name="Purpose" id="Purpose">
+  
+<option value="startup">StartUp</option>
+      <option value="Freelancer">freelancer</option>
+      <option value="Student">Student</option>
+      <option value="Other">Professional</option>
+      <option value="Other">Other</option>
+<input type="checkbox" id="scales" name="scales"
+         checked><label for="scales">  I agree to the terms and conditions.</label>
+         <br>
+         <a href="Confirmation.html">
+    <button type="submit" name="signup_submit" onclick="alert('Successfully Submitted!! we will get back to you)" style="font-weight: 500">Sign up here</button></a>
+  </div>
+  
+  
+</div>
+
+</body>
+</html>
