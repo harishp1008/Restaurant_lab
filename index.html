@@ -5,18 +5,26 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
  <link rel="stylesheet" href="css/mystyle.css">
  <link rel="stylesheet" href="css/bootstrap.min.css">
+ <link rel="stylesheet" href="css/mdb.min.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
 .w3-bar-block .w3-bar-item {padding:20px}
 </style>
 <body>
+  <nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
+ 
+  <a href="#food" onclick="w3_close()" class="w3-bar-item w3-button">Home</a>
+  <a href="blog.html" onclick="w3_close()" class="w3-bar-item w3-button">Blog</a>
+   <a href="javascript:void(0)" onclick="w3_close()"
+  class="w3-bar-item w3-button">Close Menu</a>
+</nav>
 <!-- Top menu -->
 <div class="w3-top">
   <div class="w3-white w3-xlarge" style="max-width:100%;margin:auto; background-color: #b4f2e1;">
-    <div class="w3-button w3-padding-16 w3-left"> <a href="https://www.bellmontrestaurant.com/">
-<img src="meat.png" width="40px" height="35px" alt="LOGO">
-</a>
+    <div class="w3-button w3-padding-16 w3-left"> 
+<img src="meat.png" width="40px" height="35px" alt="LOGO" onclick="w3_open()">
+
     </div>
     <div class="w3-button w3-right w3-padding-16">Delivery</div>
     <div class="w3-button w3-right w3-padding-16" style="margin-right: 20px">our  Menu</div>
@@ -29,16 +37,24 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
 
 <div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
 	<div class="w3-container w3-padding-32 w3-center" >  
-    <h3>Who we are?</h3><br>
-   <img src="chef.jpg" width="578" height="400" usemap="#chefmap">
+ 
+
+  <h3 style="font-size: 60px;">Who We Are?</h3><br>
+       <div class="id" style="text-align: center; margin-top: -30px; ">
+   <!-- <video width="800" height="500" controls muted >
+  <source src="videoplayback.mp4" type="video/mp4">
+
+
+</video> --> <img class = "animated flipInX delay-1s"src="chef.jpg" width="578" height="400" usemap="#chefmap">
    <map name="chefmap">
     <area target="" alt="Chan Yan-tak" title="Chan Yan-tak" href="https://en.wikipedia.org/wiki/Chan_Yan-tak" coords="182,155,25" shape="circle">
     <area target="" alt="Martin Yan" title="Martin Yan" href="https://en.wikipedia.org/wiki/Martin_Yan" coords="315,121" shape="poly">
       <area target="" alt="David Chang" title="David Chang"  href="https://twitter.com/davidchang?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" coords="498,160,451,103" shape="rect">
 
-   </map>
-    <div class="w3-padding-32">
-      <h4><b>We Who We Are!</b></h4>
+   </map>-->
+ </div>
+    <div class="w3-padding-32 animated rubberBand delay-1s ">
+      <h4  style="font-size: 30px;"><b>We Who We Are!</b></h4>
       <h6><i>With Passion For Real, Good Food</i></h6>
       <p><i>Just we, exploring the universe of unknownment. We have a heart of love and an interest of towards the food. we want to share Our art of food with you. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</i></p>
     </div>
@@ -47,12 +63,16 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
   <hr>
 
   <!-- 3 -Column -->
-  <div class="w3-row-padding w3-padding-16 w3-center" id="food">
-    <div class="w3-quarter" style="margin-right: 130px"  style="box-sizing: border-box; border: 1px  black;">
+  <div class="w3-row-padding w3-padding-16 w3-center " id="food">
+    <div class="w3-quarter animated bounceIn delay-1s mb-3" style="margin-right: 130px"  style="box-sizing: border-box; border: 1px  black;">
     	
      <h3 style="margin-top: 0px">Today's Special</h3>
      <img src="dish1.jpg" alt="Steak" style="width:100%">
-<table border="1px"style="margin-left: 30px; margin-top: 20px" style="text-align: center">
+     <p style="margin-top: 25px;">Food is the Art and science.All being said about modulation we're serving people delicious food, we won't give you cahnce to complaint.</p>
+
+        <a href="signup.html"><input type="button" value="Check Our Menu"></a>
+      </p></p>
+<!--<table border="1px"style="margin-left: 30px; margin-top: 20px" style="text-align: center">
 	<caption style="text-align: center;"><strong>List of Dishes</strong></caption>
   <thead>
     <tr align="center">
@@ -78,9 +98,9 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
       <td>10 EUR</td>
     </tr>
   </tbody>
-</table>
+</table>-->
     </div>
-    <div class="w3-quarter">
+    <div class="w3-quarter animated bounceIn delay-2s mb-3">
       
       <h3 style="margin-top: 0px">Co-working Space</h3>
       <img src="cowork.jpg" width="250px" height="155px"/><p style="margin-top: 25px;">We provide a space where people can work.we've a theory :<p><p><i>"if you love your workspace, you'll love your work liitle more"</i>
@@ -90,11 +110,14 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
       
      
     </div>
-    <div class="w3-quarter" style="margin-left: 130px">
+    <div class="w3-quarter animated bounceIn delay-3s mb-3" style="margin-left: 130px">
     	     <h3 style="margin-top: 0px">Our Location</h3>
       <a href="https://goo.gl/maps/wfS9NtNnfDZctJs49">
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14646.786811001351!2d85.38170146977536!3d23.399187000000012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f4e384bcca6f23%3A0x32eb156e5f3e9469!2sAroma%20Restaurant!5e0!3m2!1sen!2sin!4v1591514432304!5m2!1sen!2sin" width="100%" height="150" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></a>
 <p style="margin-top: 25px;">You can find world tastiest food here.If more of us valued food and cheer and song above hoarded gold, it would be a merrier world.</p>
+
+<a href="https://maps.google.com/maps?ll=23.399187,85.390456&z=13&t=m&hl=en&gl=IN&mapclient=embed&cid=3669049885211923561"><input type="button" value="Reach Us"></a>
+      </p>
     </div>
     
   </div>
@@ -142,7 +165,17 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
         context.drawImage(imageObj, 42, 0);
       };
       imageObj.src = 'chef.jpg';
+
+
+      function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
     </script>
+
     
     
 

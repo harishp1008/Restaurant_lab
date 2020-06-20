@@ -26,29 +26,41 @@
   
 	<div id="login-box">
     <div class="left">
-      <img src="coworkpage.jpg" width="350px" height="550px">
+      <img src="coworkpage.jpg" style="box-shadow: 5px 5px 5px 5px #e0dede; margin-top: 60px; " width="350px"
+       height="550px">
     
   </div>
   <div class="right">
-    <h1><u>Sign Up</u></h1>
+    <h1 class="animated fadeInLeft"><u>Book Your Space</u></h1>
     
-    <input type="text" name="name" placeholder="Name" />
-    <input type="email" name="email"  pattern=".+@gmail.com" placeholder="E-mail"  />
-    <input type="tel" name="phno"  placeholder="Phone number"  pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
+    <input type="text" name="name" placeholder="Name*" required size="45" pattern="[a-z]{6,2}"/>
+    <input type="email" name="email"  pattern=".+@gmail.com" placeholder="E-mail*"  />
+    <input type="tel" name="phno"  placeholder="Phone number*"  pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
        required />
     
     
-  <p>Choose a time for your space:</p>
+  <p>Choose a date for your space:*</p>
   
-<label for="start-time">From:</label>
- <input type="datetime-local" id="start-time"
-       name="start-time" value="2020-06-12T19:30">
-       <label for="End-time">To:</label>
+ <input type="date" id="date"
+       name="date" value="2020-06-12T19:30">
+       
+<p>Choose a time for your space:*</p>
+<div>
+   <span> <input type="radio" id="morning"
+     name="time" value="morning">
+    <label for="morning">9:00-12:00</label></span>
 
-<input type="datetime-local" id="End-time"
-       name="End-time" value="2018-06-12T19:30">
-
-<label for="Purpose">Purpose:</label>
+  <span>  <input type="radio" id="afternoon"
+     name="time" value="afternoon">
+    <label for="afternoon">14:00-17:00</label></span>
+  </div>
+  <div>
+    <span><input type="radio" id="evening"
+     name="time" value="evening">
+    <label for="contactChoice3">19:00-22:00</label></span>
+</div>
+<br>
+<label for="Purpose">Occupation*:</label>
 <select name="Purpose" id="Purpose">
   
 <option value="startup">StartUp</option>
@@ -56,8 +68,13 @@
       <option value="Student">Student</option>
       <option value="Other">Professional</option>
       <option value="Other">Other</option>
+    </select>
+    <label for="ID">Select ID proof*(.jpg/png format):</label>
+    <br>
+  <input type="file" id="ID" name="ID" accept="image/png, image/jpeg"><br><br>
+
 <input type="checkbox" id="scales" name="scales"
-         checked><label for="scales">  I agree to the terms and conditions.</label>
+         checked><label for="scales"> <a href="https://www.termsandconditionsgenerator.com/"> I agree to the terms and conditions.</a></label>
          <br>
          <a href="Confirmation.html">
     <button type="submit" name="signup_submit" onclick="alert('Successfully Submitted!! we will get back to you)" style="font-weight: 500">Sign up here</button></a>

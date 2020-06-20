@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+<title>Cinnamon's Blog</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="css/mystyle.css">
+ <link rel="stylesheet" href="css/bootstrap.min.css">
+ <link rel="stylesheet" href="css/mdb.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
+.w3-bar-block .w3-bar-item {padding:20px}
+#grid{
+  height: 300px;
+  width:300px;
+  padding-left: 0px 30px 0px 30px;
+}
+#btn{
+  color: #8db1ab;
+}
+
+</style>
+
+
+<body>
+  <nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
+ 
+  <a href="#food" onclick="w3_close()" class="w3-bar-item w3-button">Home</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">Blog</a>
+   <a href="javascript:void(0)" onclick="w3_close()"
+  class="w3-bar-item w3-button">Close Menu</a>
+</nav>
+<!-- Top menu -->
+<div class="w3-top">
+  <div class="w3-white w3-xlarge" style="max-width:100%;margin:auto; background-color: #b4f2e1;">
+    <div class="w3-button w3-padding-16 w3-left"> 
+<img src="meat.png" width="40px" height="35px" alt="LOGO" onclick="w3_open()">
+
+    </div>
+    <div class="w3-button w3-right w3-padding-16">Delivery</div>
+    <div class="w3-button w3-right w3-padding-16" style="margin-right: 20px">our  Menu</div>
+    <div class="w3-center w3-padding-16" style="margin-left: 14%">Cinnamon's Restaurant</div>
+  </div>
+</div>
+<h3 class="animated rubberBand" style="font-size: 60px; margin-top: 130px; text-align: center;">Our Blog</h3><br>
+  
+<!-- !PAGE CONTENT! -->
+<!-- First Photo Grid-->
+  <div class="w3-row-padding" style="margin-top: 20px; margin-left: 190px;">
+    <div class="w3-third w3-container w3-margin-bottom" id="grid">
+       <div class="card" >
+    <div class="card-body" >
+
+  <img src="blog_images/bowls-with-meat-stew-salads-and-spices-4194625.jpg" alt="Steak" style="width:100%">
+  <div class="content2" style="padding: 0px 10px 10px 10px;" >
+  <h4 class="card-title"><a>8 Restaurant ideas</a></h4>
+      <p class="card-text">Restaurant launch will vary restaurant, it’s important to stand out from the competition and draw a big crowd.</p>
+        <button type="button" class="btn btn-dark">Know More</button>
+    </div>
+
+</div>
+ <div class="card-footer text-muted mt-4" style="text-align: right; margin-right: 10px; ">
+      2 days ago
+    </div>
+</div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom" id="grid">
+       <div class="card" >
+    <div class="card-body" >
+
+  <img src="blog_images/chef-holding-white-tea-cup-887827.jpg" alt="Steak" style="width:100%">
+  <div class="content2" style="padding: 0px 10px 10px 10px;" >
+  <h4 class="card-title"><a>Advice from John Taffer</a></h4>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+      content.</p>
+      <button type="button" class="btn btn-dark">Know More</button>
+    </div>
+</div>
+ <div class="card-footer text-muted mt-4" style="text-align: right; margin-right: 10px; ">
+      2 days ago
+    </div>
+</div>
+    </div>
+    <div class="w3-third w3-container" id="grid">
+      <div class="card" >
+    <div class="card-body" >
+
+<video controls width="100%" height="182px">
+
+    <source src="promo.webm"
+            type="video/webm">
+
+    <source src="promo.mp4"
+            type="video/mp4">
+
+    Sorry, your browser doesn't support embedded videos.
+</video>
+  <div class="content2" style="padding: 0px 10px 10px 10px;" >
+  <h4 class="card-title"><a>Reservations for Lunch</a></h4>
+      <p class="card-text">we take reservation for lunch by phone call and even accespt the SMS.what is and isn’t working from the people closest to you</p>
+      <button type="button" class="btn btn-dark">Know More</button>
+    </div>
+</div>
+ <div class="card-footer text-muted mt-4" style="text-align: right; margin-right: 10px; ">
+      2 days ago
+    </div>
+</div>
+    </div>
+        <div class="w3-third w3-container" id="grid">
+      <div class="card" >
+    <div class="card-body" >
+
+  <img src="blog_images/bowls-with-meat-stew-salads-and-spices-4194625.jpg" alt="Steak" style="width:100%">
+  <div class="content2" style="padding: 0px 10px 10px 10px;" >
+  <h4 class="card-title"><a>Best Steak Dinner</a></h4>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+      content.</p>
+      <button type="button" class="btn btn-dark">Know More</button>
+    </div>
+</div>
+ <div class="card-footer text-muted mt-4" style="text-align: right; margin-right: 10px; ">
+      2 days ago
+    </div>
+</div>
+    </div>
+     
+
+  </div>
+  
+  <!-- Second Photo Grid-->
+  <div class="w3-row-padding" style="margin-top: 50px; margin-bottom: 40px; margin-left: 190px;">
+    <div class="w3-third w3-container w3-margin-bottom" id="grid">
+      <div class="card" >
+    <div class="card-body" >
+
+  <img src="blog_images/alcoholic-beverages-close-up-cuisine-cutlery-541216.jpg" alt="Steak" style="width:100%; height: 130px;">
+  <audio
+        controls
+        src="blog_images/audio.mp3" style="width:100%;">
+            Your browser does not support the
+            <code>audio</code> element.
+    </audio>
+  <div class="content2" style="padding: 0px 10px 10px 10px;" >
+  <h4 class="card-title"><a>Listen to AudioRecipeBook</a></h4>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+      content.</p>
+      <button type="button" class="btn btn-dark">Know More</button>
+    </div>
+</div>
+<div class="card-footer text-muted mt-4" style="text-align: right; margin-right: 10px; ">
+      2 days ago
+    </div>
+</div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom" id="grid">
+      <div class="card" >
+    <div class="card-body" >
+
+  <img src="blog_images/bowls-with-meat-stew-salads-and-spices-4194625.jpg" alt="Steak" style="width:100%">
+  <div class="content2" style="padding: 0px 10px 10px 10px;" >
+  <h4 class="card-title"><a>Journey to Delicious Food</a></h4>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+      content.</p>
+     <button type="button" class="btn btn-dark">Know More</button>
+    </div>
+</div>
+ <div class="card-footer text-muted mt-4" style="text-align: right; margin-right: 10px; ">
+      2 days ago
+    </div>
+</div>
+    </div>
+    <div class="w3-third w3-container" id="grid">
+     <div class="card" >
+    <div class="card-body" >
+
+  <video controls width="100%" height="182px">
+
+    <source src="promo.webm"
+            type="video/webm">
+
+    <source src="promo.mp4"
+            type="video/mp4">
+
+    Sorry, your browser doesn't support embedded videos.
+</video>
+  <div class="content2" style="padding: 0px 10px 10px 10px;" >
+  <h4 class="card-title"><a>Opened New Restaurant</a></h4>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+      content.</p>
+      <button type="button" class="btn btn-dark">Know More</button>
+    </div>
+</div>
+<div class="card-footer text-muted mt-4" style="text-align: right; margin-right: 10px; ">
+      2 days ago
+    </div>
+</div>
+    </div>
+        <div class="w3-third w3-container" id="grid" >
+      <div class="card" >
+    <div class="card-body" >
+     
+
+  <video controls width="100%" height="182px">
+
+    <source src="promo.webm"
+            type="video/webm">
+
+    <source src="promo.mp4"
+            type="video/mp4">
+
+    Sorry, your browser doesn't support embedded videos.
+</video>
+  
+  <div class="content2" style="padding: 0px 10px 10px 10px;" >
+  <h4 class="card-title"><a>Interior design</a></h4>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+      content.</p>
+     <button type="button" class="btn btn-dark">Know More</button>
+    </div>
+</div>
+
+<div class="card-footer text-muted mt-4" style="text-align: right; margin-right: 10px; ">
+      1 week ago
+    </div>
+</div>
+    </div>
+       </div>
+
+
+  <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+    </div>
+  </div>
+
+  
+  
+  
+  <hr id="about">
+  <!-- Footer -->
+  <footer class="panel-footer" style="color: #000000;  width: 100%;" >
+    <div class="container-fluid"style="width: 100%;">
+      <div class="row">
+        <section id="hours" class="col-sm-4">
+          
+          <span>Hours</span><br>
+          Sun-Thurs: 11:15am - 2:30pm<br>
+          Saturday Closed
+        
+
+        </section>
+        <section id="Address" class="col-sm-4">
+          <span>Address:</span><br>
+          Sushila Enclave, Lowadih Chowk, <br>Purulia Road, Kantatoli, Ranchi<p><b>*Deliver available within 3-4 miles, with minimum order of 15EUR plus 1EUR charge for all deliveries</b></p>
+          
+        </section>
+        <section id="testimonials" style="font-style: italic;" class ="col-sm-4">
+          <p> "The best Spanish restaurant We've been to! And that's saying a lot, Since We've been to many!"</p>
+          <p>"Amazing food! Great Service! couldn't ask for more! we'll be back again and again to serve you!"</p>
+        </section>
+  </div>
+  <div class="text-center" style="float: right;">&copy; Cinnamon's Restauran Since 2000</div>
+    
+
+  </footer>
+  
+
+<!-- End page content -->
+</div>
+
+<script>
+  var canvas = document.getElementById('myCanvas');
+      var context = canvas.getContext('2d');
+      var imageObj = new Image();
+
+      imageObj.onload = function() {
+        context.drawImage(imageObj, 42, 0);
+      };
+      imageObj.src = 'chef.jpg';
+
+
+      function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+    </script>
+
+    
+    
+
+</body>
+</html>
