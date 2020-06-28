@@ -8,8 +8,11 @@
  <link rel="stylesheet" href="css/mdb.min.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
 <style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
-.w3-bar-block .w3-bar-item {padding:20px}
+body,h1,h2,h3,h4,h5,h6 
+{font-family: "Karma", sans-serif}
+.w3-bar-block .w3-bar-item {
+  padding:20px;
+}
 #grid{
   height: 300px;
   width:300px;
@@ -25,8 +28,8 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
 <body>
   <nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
  
-  <a href="#food" onclick="w3_close()" class="w3-bar-item w3-button">Home</a>
-  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">Blog</a>
+  <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button">Home</a>
+  <a href="#blog" onclick="w3_close()" class="w3-bar-item w3-button">Blog</a>
    <a href="javascript:void(0)" onclick="w3_close()"
   class="w3-bar-item w3-button">Close Menu</a>
 </nav>
@@ -47,6 +50,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
 <!-- !PAGE CONTENT! -->
 <!-- First Photo Grid-->
   <div class="w3-row-padding" style="margin-top: 20px; margin-left: 190px;">
+    <!--Card 1-->
     <div class="w3-third w3-container w3-margin-bottom" id="grid">
        <div class="card" >
     <div class="card-body" >
@@ -55,7 +59,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
   <div class="content2" style="padding: 0px 10px 10px 10px;" >
   <h4 class="card-title"><a>8 Restaurant ideas</a></h4>
       <p class="card-text">Restaurant launch will vary restaurant, it’s important to stand out from the competition and draw a big crowd.</p>
-        <button type="button" class="btn btn-dark">Know More</button>
+        <a href="https://upserve.com/restaurant-insider/4-restaurant-grand-opening-ideas-will-bring-crowd/"><button type="button" class="btn btn-dark">Know More</button></a>
     </div>
 
 </div>
@@ -64,6 +68,8 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
     </div>
 </div>
     </div>
+    <!--End of Card 1-->
+    <!--Card 2-->
     <div class="w3-third w3-container w3-margin-bottom" id="grid">
        <div class="card" >
     <div class="card-body" >
@@ -71,7 +77,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
   <img src="blog_images/chef-holding-white-tea-cup-887827.jpg" alt="Steak" style="width:100%">
   <div class="content2" style="padding: 0px 10px 10px 10px;" >
   <h4 class="card-title"><a>Advice from John Taffer</a></h4>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+      <p class="card-text" style="color:#07031a;">Some quick example text to build on the card title and make up the bulk of the card's
       content.</p>
       <button type="button" class="btn btn-dark">Know More</button>
     </div>
@@ -81,20 +87,17 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
     </div>
 </div>
     </div>
+    <!--End of Card 2-->
+    <!--Card 3-->
     <div class="w3-third w3-container" id="grid">
       <div class="card" >
     <div class="card-body" >
 
-<video controls width="100%" height="182px">
-
-    <source src="promo.webm"
-            type="video/webm">
-
-    <source src="promo.mp4"
-            type="video/mp4">
-
-    Sorry, your browser doesn't support embedded videos.
+<video controls width="100%" height="182px" loop="True" poster="new.jpg">
+<source src="promo.mp4" type="video/mp4">
+Sorry, your browser doesn't support embedded videos.
 </video>
+
   <div class="content2" style="padding: 0px 10px 10px 10px;" >
   <h4 class="card-title"><a>Reservations for Lunch</a></h4>
       <p class="card-text">we take reservation for lunch by phone call and even accespt the SMS.what is and isn’t working from the people closest to you</p>
@@ -102,10 +105,12 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
     </div>
 </div>
  <div class="card-footer text-muted mt-4" style="text-align: right; margin-right: 10px; ">
-      2 days ago
+      5 days ago
     </div>
 </div>
     </div>
+    <!--End of Card 3-->
+    <!--card 4-->
         <div class="w3-third w3-container" id="grid">
       <div class="card" >
     <div class="card-body" >
@@ -119,13 +124,14 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
     </div>
 </div>
  <div class="card-footer text-muted mt-4" style="text-align: right; margin-right: 10px; ">
-      2 days ago
+      1 week ago
     </div>
 </div>
     </div>
      
 
   </div>
+  <!--End of Card 4-->
   
   <!-- Second Photo Grid-->
   <div class="w3-row-padding" style="margin-top: 50px; margin-bottom: 40px; margin-left: 190px;">
@@ -136,7 +142,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
   <img src="blog_images/alcoholic-beverages-close-up-cuisine-cutlery-541216.jpg" alt="Steak" style="width:100%; height: 130px;">
   <audio
         controls
-        src="blog_images/audio.mp3" style="width:100%;">
+        src="blog_images/audio.mp3" style="width:100%;" loop="True">
             Your browser does not support the
             <code>audio</code> element.
     </audio>
@@ -148,7 +154,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
     </div>
 </div>
 <div class="card-footer text-muted mt-4" style="text-align: right; margin-right: 10px; ">
-      2 days ago
+      2 weeks ago
     </div>
 </div>
     </div>
@@ -165,7 +171,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
     </div>
 </div>
  <div class="card-footer text-muted mt-4" style="text-align: right; margin-right: 10px; ">
-      2 days ago
+      2 weeks ago
     </div>
 </div>
     </div>
@@ -173,15 +179,10 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
      <div class="card" >
     <div class="card-body" >
 
-  <video controls width="100%" height="182px">
+  <video controls width="100%" height="182px" preload="meta-data" poster="modern.jpg" playsinline="True">
 
-    <source src="promo.webm"
-            type="video/webm">
-
-    <source src="promo.mp4"
-            type="video/mp4">
-
-    Sorry, your browser doesn't support embedded videos.
+  <source src="promo.mp4" type="video/mp4">
+Sorry, your browser doesn't support embedded videos.
 </video>
   <div class="content2" style="padding: 0px 10px 10px 10px;" >
   <h4 class="card-title"><a>Opened New Restaurant</a></h4>
@@ -191,7 +192,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
     </div>
 </div>
 <div class="card-footer text-muted mt-4" style="text-align: right; margin-right: 10px; ">
-      2 days ago
+      3 weeks ago
     </div>
 </div>
     </div>
@@ -200,13 +201,9 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
     <div class="card-body" >
      
 
-  <video controls width="100%" height="182px">
+  <video controls width="100%" height="182px"  poster="customer.jpg" preload="auto">
 
-    <source src="promo.webm"
-            type="video/webm">
-
-    <source src="promo.mp4"
-            type="video/mp4">
+  <source src="promo.mp4" type="video/mp4">
 
     Sorry, your browser doesn't support embedded videos.
 </video>
@@ -220,7 +217,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
 </div>
 
 <div class="card-footer text-muted mt-4" style="text-align: right; margin-right: 10px; ">
-      1 week ago
+      1 month ago
     </div>
 </div>
     </div>
@@ -275,15 +272,6 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
 </div>
 
 <script>
-  var canvas = document.getElementById('myCanvas');
-      var context = canvas.getContext('2d');
-      var imageObj = new Image();
-
-      imageObj.onload = function() {
-        context.drawImage(imageObj, 42, 0);
-      };
-      imageObj.src = 'chef.jpg';
-
 
       function w3_open() {
   document.getElementById("mySidebar").style.display = "block";
