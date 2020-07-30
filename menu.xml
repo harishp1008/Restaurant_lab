@@ -1,7 +1,8 @@
 <?xml version = "1.0" encoding = "UTF-8" standalone = "yes" ?>
 <!DOCTYPE starter[
-   <!ELEMENT starter(food (name,price,description,Rating))>
-   <!ELEMENT name (#PCDATA)>
+<!ELEMENT starter (food*)>
+   <!ELEMENT food (name,price,description,Rating?)>
+   <!ELEMENT name (#PCDATA| strong)*>
    <!ELEMENT price (#PCDATA)>
    <!ELEMENT description (#PCDATA)>
    <!ELEMENT Rating (#PCDATA)>
@@ -36,13 +37,19 @@
 <name>ROLLED AUBERGINES </name>
 <price>$5.95</price>
 <description> Aubergines were introduced to the Mediterranean region by the Arabs in the Middle Ages and Sicilians use them a lot in their cooking. </description>
-<Rating>4.5</Rating>
+<Rating></Rating>
 </food>
 <food>
 <name>SMOKED PAPRIKA BRUCHETTE</name>
 <price>$3.95</price>
 <description>As well as being a source of vitamin E and monounsaturated fat, avocado is one of the best sources of glutathione, a molecule which help to burn off fat </description>
 <Rating>4.5</Rating>
+</food>
+<food>
+<name>SMOKED PAPRIKA BRUCHETTE</name>
+<price>$3.95</price>
+<description>As well as being a source of vitamin E and monounsaturated fat, avocado is one of the best sources of glutathione, a molecule which help to burn off fat </description>
+
 </food>
 
 </starter>
