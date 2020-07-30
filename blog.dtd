@@ -1,0 +1,5 @@
+
+<!ELEMENT blog (title,descip,days)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT descip(#PCDATA)>
+<!ELEMENT days (#PCDATA)>

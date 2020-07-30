@@ -1,56 +1,20 @@
 <!DOCTYPE html>
 <html>
+<head>
+  <title>Marksheet</title>
+</head>
 <body>
-<!--
-<video width="900" height="240" >
-  <source src="videoplayback.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
-
-<p><b>Note:</b> The autoplay attribute does not work on some mobile devices.</p>
--->
-<style type="text/css">
-	
-
-	/* GLOBAL STYLES */
-body {
-  background: #333;
-  padding-top: 5em;
-  display: flex;
-  justify-content: center;
-}
-
-/* DEMO-SPECIFIC STYLES */
-.typewriter h1 {
-  color: #fff;
-  font-family: monospace;
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid orange; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em; /* Adjust as needed */
-  animation: 
-    typing 3.5s steps(30, end),
-    blink-caret .5s step-end infinite;
-}
-
-/* The typing effect */
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
-}
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: orange }
-}
-
-
-</style>
-<div class="typewriter">
-  <h1>The cat and the hat.</h1>
-</div>
+  <h1>Menu card</h1>
+  <script>
+     var xmlhttp = new XMLHttpRequest();
+  xmlhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      myFunction(this);
+    }
+  };
+  xmlhttp.open("GET", "cd_catalog.xml", true);
+  xmlhttp.send();
+  </script>
 
 </body>
 </html>

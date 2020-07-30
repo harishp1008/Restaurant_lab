@@ -1,0 +1,48 @@
+<?xml version = "1.0" encoding = "UTF-8" standalone = "yes" ?>
+<!DOCTYPE starter[
+   <!ELEMENT starter(food (name,price,description,Rating))>
+   <!ELEMENT name (#PCDATA)>
+   <!ELEMENT price (#PCDATA)>
+   <!ELEMENT description (#PCDATA)>
+   <!ELEMENT Rating (#PCDATA)>
+]>
+
+<starter>
+<food>
+<name>PRAWN &amp; MONKFISH SOUP</name>
+<price>$5.95</price>
+<description> From Trieste to Puglia you’ll find the so-called brodetti (broths), although they vary from region to region. We had countless bowlfuls on our coastal journey</description>
+<Rating>3.5</Rating>
+</food>
+<food>
+<name>AMALFI-STYLE FISH SOUP</name>
+<price>$5.05</price>
+<description> here are many variations on the theme, depending on the cook’s preference and what’s available in the market on the day.</description>
+<Rating>3.8</Rating>
+</food>
+<food>
+<name>ASPARAGUS &amp; GRANA PADANO</name>
+<price>$5.95</price>
+<description> This rainbow salad is a fantastic source of vitamin C and is surprisingly filling</description>
+<Rating>3.12</Rating>
+</food>
+<food>
+<name>PARSLEY VINAIGRETTE</name>
+<price>$2.95</price>
+<description>  Today they are still relatively abundant in the island’s coastal waters and form a major part of the islanders’ diet</description>
+<Rating>3.56</Rating>
+</food>
+<food>
+<name>ROLLED AUBERGINES </name>
+<price>$5.95</price>
+<description> Aubergines were introduced to the Mediterranean region by the Arabs in the Middle Ages and Sicilians use them a lot in their cooking. </description>
+<Rating>4.5</Rating>
+</food>
+<food>
+<name>SMOKED PAPRIKA BRUCHETTE</name>
+<price>$3.95</price>
+<description>As well as being a source of vitamin E and monounsaturated fat, avocado is one of the best sources of glutathione, a molecule which help to burn off fat </description>
+<Rating>4.5</Rating>
+</food>
+
+</starter>
