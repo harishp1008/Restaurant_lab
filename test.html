@@ -1,20 +1,28 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Marksheet</title>
-</head>
 <body>
-  <h1>Menu card</h1>
-  <script>
-     var xmlhttp = new XMLHttpRequest();
-  xmlhttp.onreadystatechange = function() {
+
+<p id="demo"></p>
+<p id="demo2"></p>
+
+<script>
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
-      myFunction(this);
+    myFunction(this);
     }
-  };
-  xmlhttp.open("GET", "cd_catalog.xml", true);
-  xmlhttp.send();
-  </script>
+};
+xhttp.open("GET", "books.xml", true);
+xhttp.send();
+
+function myFunction(xml) {
+    var xmlDoc = xml.responseXML;
+    document.getElementById("demo").innerHTML =
+    xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+       document.getElementById("demo2").innerHTML = xmlDoc.getElementsByTagName("book")[0].childNodes[0].nodeValue;
+
+}
+</script>
 
 </body>
 </html>

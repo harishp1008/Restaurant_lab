@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<table id="demo">
+<tr><th>Name</th><th>Price</th><th>Rating</th></tr>
+</table>
+
+<script>
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        myFunction(this);
+    }
+};
+xhttp.open("GET", "menu.xml", true);
+xhttp.send();
+
+function myFunction(xml) {
+    var x, i, xmlDoc, txt;
+    xmlDoc = xml.responseXML;
+    table = "<tr><th>name</th><th>price</th><th>rating</th></tr>";
+    x = xmlDoc.getElementsByTagName('Mocktail');
+   
+    for (i = 0 ; i <x.length; i++) {
+       table += "<tr><td>" + 
+    x[i].getElementsByTagName("name")[0].childNodes[0].nodeValue +
+    "</td><td>" +
+    x[i].getElementsByTagName("price")[0].childNodes[0].nodeValue +
+    "</td><td>"+
+    x[i].getElementsByTagName("Rating")[0].childNodes[0].nodeValue+
+     "</td></tr>";
+
+
+    
+
+    }
+    document.getElementById("demo").innerHTML = table;
+}
+
+
+
+</script>
+
+</body>
+</html>

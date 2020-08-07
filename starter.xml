@@ -1,0 +1,504 @@
+
+
+<starter>
+<food>
+<name>Prawn &amp; Monkish Soup</name>
+<price>$5.95</price>
+<Rating>3.5</Rating>
+</food>
+
+<food>
+<name>Amalfi-Style Fish Soup</name>
+<price>$5.05</price>
+<Rating>3.8</Rating>
+</food>
+
+<food>
+<name>Asparagus &amp; Grana Padano</name>
+<price>$5.95</price>
+<Rating>3.12</Rating>
+</food>
+
+<food>
+<name>Parsley Vinaigrette</name>
+<price>$2.95</price>
+<Rating>3.56</Rating>
+</food>
+
+<food>
+<name>Rolled Aubergines </name>
+<price>$5.95</price>
+<Rating>3.6</Rating>
+</food>
+
+<food>
+<name>Pancetta</name>
+<price>$3.95</price>
+<Rating>4.5</Rating>
+</food>
+
+<food>
+<name>Bagna cauda</name>
+<price>$3.95</price>
+<Rating>4.5</Rating>
+</food>
+
+<food>
+<name>Sardines al saor</name>
+<price>$3.95</price>
+<Rating>4.5</Rating>
+</food>
+
+<food>
+<name>Stracciatella soup</name>
+<price>$3.95</price>
+<Rating>4.5</Rating>
+</food>
+<food>
+<name>Griddled octopus</name>
+<price>$3.95</price>
+<Rating>4.5</Rating>
+</food>
+<food>
+<name>Pancetta-wrapped</name>
+<price>$3.95</price>
+<Rating>4.5</Rating>
+</food>
+
+<food>
+<name>Pancetta-wrapped</name>
+<price>$3.95</price>
+<Rating>4.5</Rating>
+</food>
+
+<food>
+<name>Pancetta-wrapped</name>
+<price>$3.95</price>
+<Rating>4.5</Rating>
+</food>
+
+<food>
+<name>Pancetta-wrapped</name>
+<price>$3.95</price>
+<Rating>4.5</Rating>
+</food>
+
+
+
+
+
+<!---Soup dishes-->
+
+<soup>
+<name>Prawnssss &amp; Monkish Soup</name>
+<price>$5.95</price>
+<Rating>3.5</Rating>
+</soup>
+
+<soup>
+<name>Amalfi-Style Fish Soup</name>
+<price>$5.05</price>
+<Rating>3.8</Rating>
+</soup>
+
+<soup>
+<name>Asparagus &amp; Grana Padano</name>
+<price>$5.95</price>
+<Rating>3.12</Rating>
+</soup>
+
+<soup>
+<name>Parsley Vinaigrette</name>
+<price>$2.95</price>
+<Rating>3.56</Rating>
+</soup>
+
+<soup>
+<name>Rolled Aubergines </name>
+<price>$5.95</price>
+<Rating>3.6</Rating>
+</soup>
+
+<soup>
+<name>Pancetta</name>
+<price>$3.95</price>
+<Rating>4.5</Rating>
+</soup>
+
+<soup>
+<name>Bagna cauda</name>
+<price>$3.95</price>
+<Rating>4.5</Rating>
+</soup>
+
+<soup>
+<name>Sardines al saor</name>
+<price>$3.95</price>
+<Rating>4.5</Rating>
+</soup>
+
+<soup>
+<name>Stracciatella soup</name>
+<price>$3.95</price>
+<Rating>4.5</Rating>
+</soup>
+<soup>
+<name>Griddled octopus</name>
+<price>$3.95</price>
+<Rating>4.5</Rating>
+</soup>
+<soup>
+<name>Pancetta-wrapped</name>
+<price>$3.95</price>
+<Rating>4.5</Rating>
+</soup>
+
+<soup>
+<name>Pancetta-wrapped</name>
+<price>$3.95</price>
+<Rating>4.5</Rating>
+</soup>
+
+<soup>
+<name>Pancetta-wrapped</name>
+<price>$3.95</price>
+<Rating>4.5</Rating>
+</soup>
+
+<soup>
+<name>Pancetta-wrapped</name>
+<price>$3.95</price>
+<Rating>4.5</Rating>
+</soup>
+<!--Main Course-->
+
+<maincourse>
+<name>Prawnssss &amp; Monkish maincourse</name>
+<price>$5.95</price>
+<Rating>3.5</Rating>
+</maincourse>
+
+<maincourse>
+<name>Amalfi-Style Fish maincourse</name>
+<price>$5.05</price>
+<Rating>3.8</Rating>
+</maincourse>
+
+<maincourse>
+<name>Asparagus &amp; Grana Padano</name>
+<price>$5.95</price>
+<Rating>3.12</Rating>
+</maincourse>
+
+<maincourse>
+<name>Parsley Vinaigrette</name>
+<price>$2.95</price>
+<Rating>3.56</Rating>
+</maincourse>
+
+<maincourse>
+<name>Rolled Aubergines </name>
+<price>$5.95</price>
+<Rating>3.6</Rating>
+</maincourse>
+
+<maincourse>
+<name>Pancetta</name>
+<price>$3.95</price>
+<Rating>4.5</Rating>
+</maincourse>
+
+<maincourse>
+<name>Bagna cauda</name>
+<price>$3.95</price>
+<Rating>4.5</Rating>
+</maincourse>
+
+<maincourse>
+<name>Sardines al saor</name>
+<price>$3.95</price>
+<Rating>4.5</Rating>
+</maincourse>
+
+<maincourse>
+<name>Stracciatella maincourse</name>
+<price>$3.95</price>
+<Rating>4.5</Rating>
+</maincourse>
+<maincourse>
+<name>Griddled octopus</name>
+<price>$3.95</price>
+<Rating>4.5</Rating>
+</maincourse>
+<maincourse>
+<name>Pancetta-wrapped</name>
+<price>$3.95</price>
+<Rating>4.5</Rating>
+</maincourse>
+
+<maincourse>
+<name>Pancetta-wrapped</name>
+<price>$3.95</price>
+<Rating>4.5</Rating>
+</maincourse>
+
+<maincourse>
+<name>Pancetta-wrapped</name>
+<price>$3.95</price>
+<Rating>4.5</Rating>
+</maincourse>
+
+<maincourse>
+<name>Pancetta-wrapped</name>
+<price>$3.95</price>
+<Rating>4.5</Rating>
+</maincourse>
+
+<!--Non-veg-->
+<nonveg>
+<name>Prawnssss &amp; Monkish nonveg</name>
+<price>$5.95</price>
+<Rating>3.5</Rating>
+</nonveg>
+
+<nonveg>
+<name>Amalfi-Style Fish nonveg</name>
+<price>$5.05</price>
+<Rating>3.8</Rating>
+</nonveg>
+
+<nonveg>
+<name>Asparagus &amp; Grana Padano</name>
+<price>$5.95</price>
+<Rating>3.12</Rating>
+</nonveg>
+
+<nonveg>
+<name>Parsley Vinaigrette</name>
+<price>$2.95</price>
+<Rating>3.56</Rating>
+</nonveg>
+
+<nonveg>
+<name>Rolled Aubergines </name>
+<price>$5.95</price>
+<Rating>3.6</Rating>
+</nonveg>
+
+<nonveg>
+<name>Pancetta</name>
+<price>$3.95</price>
+<Rating>4.5</Rating>
+</nonveg>
+
+<nonveg>
+<name>Bagna cauda</name>
+<price>$3.95</price>
+<Rating>4.5</Rating>
+</nonveg>
+
+<nonveg>
+<name>Sardines al saor</name>
+<price>$3.95</price>
+<Rating>4.5</Rating>
+</nonveg>
+
+<nonveg>
+<name>Stracciatella nonveg</name>
+<price>$3.95</price>
+<Rating>4.5</Rating>
+</nonveg>
+<nonveg>
+<name>Griddled octopus</name>
+<price>$3.95</price>
+<Rating>4.5</Rating>
+</nonveg>
+<nonveg>
+<name>Pancetta-wrapped</name>
+<price>$3.95</price>
+<Rating>4.5</Rating>
+</nonveg>
+
+<nonveg>
+<name>Pancetta-wrapped</name>
+<price>$3.95</price>
+<Rating>4.5</Rating>
+</nonveg>
+
+<nonveg>
+<name>Pancetta-wrapped</name>
+<price>$3.95</price>
+<Rating>4.5</Rating>
+</nonveg>
+
+<nonveg>
+<name>Pancetta-wrapped</name>
+<price>$3.95</price>
+<Rating>4.5</Rating>
+</nonveg>
+
+<!--Mocktail-->
+<Mocktail>
+<name>Prawnssss &amp; Monkish Mocktail</name>
+<price>$5.95</price>
+<Rating>3.5</Rating>
+</Mocktail>
+
+<Mocktail>
+<name>Amalfi-Style Fish Mocktail</name>
+<price>$5.05</price>
+<Rating>3.8</Rating>
+</Mocktail>
+
+<Mocktail>
+<name>Asparagus &amp; Grana Padano</name>
+<price>$5.95</price>
+<Rating>3.12</Rating>
+</Mocktail>
+
+<Mocktail>
+<name>Parsley Vinaigrette</name>
+<price>$2.95</price>
+<Rating>3.56</Rating>
+</Mocktail>
+
+<Mocktail>
+<name>Rolled Aubergines </name>
+<price>$5.95</price>
+<Rating>3.6</Rating>
+</Mocktail>
+
+<Mocktail>
+<name>Pancetta</name>
+<price>$3.95</price>
+<Rating>4.5</Rating>
+</Mocktail>
+
+<Mocktail>
+<name>Bagna cauda</name>
+<price>$3.95</price>
+<Rating>4.5</Rating>
+</Mocktail>
+
+<Mocktail>
+<name>Sardines al saor</name>
+<price>$3.95</price>
+<Rating>4.5</Rating>
+</Mocktail>
+
+<Mocktail>
+<name>Stracciatella Mocktail</name>
+<price>$3.95</price>
+<Rating>4.5</Rating>
+</Mocktail>
+<Mocktail>
+<name>Griddled octopus</name>
+<price>$3.95</price>
+<Rating>4.5</Rating>
+</Mocktail>
+<Mocktail>
+<name>Pancetta-wrapped</name>
+<price>$3.95</price>
+<Rating>4.5</Rating>
+</Mocktail>
+
+<Mocktail>
+<name>Pancetta-wrapped</name>
+<price>$3.95</price>
+<Rating>4.5</Rating>
+</Mocktail>
+
+<Mocktail>
+<name>Pancetta-wrapped</name>
+<price>$3.95</price>
+<Rating>4.5</Rating>
+</Mocktail>
+
+<Mocktail>
+<name>Pancetta-wrapped</name>
+<price>$3.95</price>
+<Rating>4.5</Rating>
+</Mocktail>
+<!---Desert-->
+<Desert>
+<name>Prawnssss &amp; Monkish Desert</name>
+<price>$5.95</price>
+<Rating>3.5</Rating>
+</Desert>
+
+<Desert>
+<name>Amalfi-Style Fish Desert</name>
+<price>$5.05</price>
+<Rating>3.8</Rating>
+</Desert>
+
+<Desert>
+<name>Asparagus &amp; Grana Padano</name>
+<price>$5.95</price>
+<Rating>3.12</Rating>
+</Desert>
+
+<Desert>
+<name>Parsley Vinaigrette</name>
+<price>$2.95</price>
+<Rating>3.56</Rating>
+</Desert>
+
+<Desert>
+<name>Rolled Aubergines </name>
+<price>$5.95</price>
+<Rating>3.6</Rating>
+</Desert>
+
+<Desert>
+<name>Pancetta</name>
+<price>$3.95</price>
+<Rating>4.5</Rating>
+</Desert>
+
+<Desert>
+<name>Bagna cauda</name>
+<price>$3.95</price>
+<Rating>4.5</Rating>
+</Desert>
+
+<Desert>
+<name>Sardines al saor</name>
+<price>$3.95</price>
+<Rating>4.5</Rating>
+</Desert>
+
+<Desert>
+<name>Stracciatella Desert</name>
+<price>$3.95</price>
+<Rating>4.5</Rating>
+</Desert>
+<Desert>
+<name>Griddled octopus</name>
+<price>$3.95</price>
+<Rating>4.5</Rating>
+</Desert>
+<Desert>
+<name>Pancetta-wrapped</name>
+<price>$3.95</price>
+<Rating>4.5</Rating>
+</Desert>
+
+<Desert>
+<name>Pancetta-wrapped</name>
+<price>$3.95</price>
+<Rating>4.5</Rating>
+</Desert>
+
+<Desert>
+<name>Pancetta-wrapped</name>
+<price>$3.95</price>
+<Rating>4.5</Rating>
+</Desert>
+
+<Desert>
+<name>Pancetta-wrapped</name>
+<price>$3.95</price>
+<Rating>4.5</Rating>
+</Desert>
+</starter>
