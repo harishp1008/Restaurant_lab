@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<starter xmlns:xlink="http://www.w3.org/1999/xlink">
+
+<food>
+  <name>
+  Murg Chicken
+  </name>
+ <description xlink:type="simple" xlink:href="https://cinamon.com/starter.xml#Murg">
+  Fact about Murg chicken
+
+  </description>
+</food>
+
+<food>
+  <name>
+Butter Chicken
+  </name>
+  <description xlink:type="simple" xlink:href="https://cinamon.com/starter.xml#Butter">
+  Fact about flat-coated Retriever
+  </description>
+</food>
+
+</starter>

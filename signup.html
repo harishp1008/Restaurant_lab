@@ -5,10 +5,18 @@
 	<title></title>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="signup.js"></script>
  <link rel="stylesheet" href="css/mystyle.css">
  
 <meta name="viewport" content="width=device-width, initial-scale=1">
  <link rel="stylesheet" href="css/signupstyles.css">
+ <style type="text/css">
+ 
+
+ </style>
+ <script>
+
+</script>
 </head>
 <body>
   <!-- Top menu -->
@@ -26,62 +34,70 @@
   
 	<div id="login-box">
     <div class="left">
-      <img src="coworkpage.jpg" style="box-shadow: 5px 5px 5px 5px #e0dede; margin-top: 60px; " width="350px"
-       height="550px">
+      <img src="images/coworkpage.jpg" style="box-shadow: 5px 5px 5px 5px #e0dede; margin-top: 60px; opacity:  " width="400px"
+       height="700px">
     
   </div>
   <div class="right">
     <h1 class="animated fadeInLeft"><u>Book Your Space</u></h1>
+    <form name="contactForm" onsubmit="return validateForm()" action="Confirmation.html" method="post">
+    <div class="row">
+        <input type="text" name="name" placeholder="Name">
+        <span class="error" id="nameErr"></span>
+    </div>
+    <div class="row">
     
-    <input type="text" name="name" placeholder="Name*" required size="45" pattern="[a-z]{6,2}"/>
-    <input type="email" name="email"  pattern=".+@gmail.com" placeholder="E-mail*"  />
-    <input type="tel" name="phno"  placeholder="Phone number*"  pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
-       required />
-    
-    
-  <p>Choose a date for your space:*</p>
-  
- <input type="date" id="date"
-       name="date" value="2020-06-12T19:30">
-       
-<p>Choose a time for your space:*</p>
-<div>
-   <span> <input type="radio" id="morning"
-     name="time" value="morning">
-    <label for="morning">9:00-12:00</label></span>
+        <input type="text" name="email" placeholder="E-mail">
+        <span class="error" id="emailErr"></span>
+    </div>
+    <div class="row">
+        <input type="text" name="mobile" maxlength="10" placeholder="Mobile No">
+        <span class="error" id="mobileErr"></span>
+    </div>
+    <div class="row">
+      <label for="Purpose">Occupation:</label>
 
-  <span>  <input type="radio" id="afternoon"
-     name="time" value="afternoon">
-    <label for="afternoon">14:00-17:00</label></span>
-  </div>
-  <div>
-    <span><input type="radio" id="evening"
-     name="time" value="evening">
-    <label for="contactChoice3">19:00-22:00</label></span>
-</div>
-<br>
-<label for="Purpose">Occupation*:</label>
-<select name="Purpose" id="Purpose">
-  
-<option value="startup">StartUp</option>
-      <option value="Freelancer">freelancer</option>
-      <option value="Student">Student</option>
-      <option value="Other">Professional</option>
-      <option value="Other">Other</option>
-    </select>
-    <label for="ID">Select ID proof*(.jpg/png format):</label>
-    <br>
-  <input type="file" id="ID" name="ID" accept="image/png, image/jpeg"><br><br>
+        <select name="occupation">
+            <option>Select</option>
+            <option>Professional</option>
+            <option>Student</option>
+            <option>Freelancer</option>
+            <option>Startup</option>
+            <option>other</option>
+        </select>
+        <span class="error" id="occupationErr"></span>
+    </div>
+    <div class="row">
+        
+          <p>Choose a time for your space:*</p>
+          <div class="form-inline">
+           <span> <label><input type="radio" name="time" value="morning : 9:00-12:00">  9:00-12:00</label></span> 
+           <span><label><input type="radio" name="time" value="afternoon : 14:00-17:00">  14:00-17:00  </label></span>
+          <span><label><input type="radio" name="time" value="Night : 19:00-22:00">  19:00-22:00</label></span>
 
-<input type="checkbox" id="scales" name="scales"
+        </div>
+        <span class="error" id="timeErr"></span>
+    </div>
+    <div class="row">
+        <label>ammenities <i>(Optional)</i></label>
+        <div class="form-inline">
+            <span></span><label><input type="checkbox" name="ammenities[]" value="laptop">  laptop</label></span>
+            <span><label><input type="checkbox" name="ammenities[]" value="movies">  Coffee & Tea</label></span>
+             <span><label><input type="checkbox" name="ammenities[]" value="music">  Meeting Room</label></span>
+        </div>
+    </div>
+    <label for="ID">Select ID proof*(.jpg/png format):
+    
+  <input type="file" id="file" name="file" accept="image/png, image/jpeg">
+</label><br><br>
+  <input type="checkbox" id="scales" name="scales"
          checked><label for="scales"> <a href="https://www.termsandconditionsgenerator.com/"> I agree to the terms and conditions.</a></label>
-         <br>
-         <a href="Confirmation.html">
-    <button type="submit" name="signup_submit" onclick="alert('Successfully Submitted!! we will get back to you)" style="font-weight: 500">Sign up here</button></a>
-  </div>
-  
-  
-</div>
+         
+    <div class="row">
+        <input type="submit" value="Submit">
+    </div>
+</form>
+    
 
 </body>
 </html>

@@ -2,6 +2,11 @@
 *:focus {
   outline: none;
 }
+.form-inline {
+    border: 1px solid #ccc;
+    padding: 8px 10px 4px;
+    border-radius: 2px;
+}
 
 body {
   margin: 0;
@@ -12,15 +17,28 @@ body {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
 }
+  .error {
+    color: red;
+    font-size: 90%;
+}
+.form-inline label, .form-inline input {
+    display: inline-block;
+    width: auto;
+    padding-right: 15px;
+}
+.row {
+    padding-bottom: 10px;
+}
 
 #login-box {
   position: relative;
   margin: 5% auto;
-  width: 700px;
-  height:750px;
+  width: 750px;
+  height:900px;
   background: #f5f5f5;
   border-radius: 2px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+
 }
 
 .left {
@@ -29,8 +47,8 @@ body {
   left: 0;
   box-sizing: border-box;
   padding: 40px;
-  width: 300px;
-  height: 400px;
+  width: 100%;
+  height: auto;
 }
 
 h1 {
@@ -64,7 +82,7 @@ input[type="email"]:focus,input[type="date"]:focus,input[type="tel"]:focus,selec
   transition: 0.2s ease;
 }
 
-button[type="submit"] {
+input[type="submit"] {
   margin-top: 28px;
   width: 160px;
   height: 40px;
@@ -79,14 +97,14 @@ button[type="submit"] {
   cursor: pointer;
 }
 
-button[type="submit"]:hover,
-button[type="submit"]:focus {
+input[type="submit"]:hover,
+input[type="submit"]:focus {
   opacity: 0.8;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
   transition: 0.1s ease;
 }
 
-button[type="submit"]:active {
+input[type="submit"]:active {
   opacity: 1;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
   transition: 0.1s ease;
@@ -115,8 +133,11 @@ button[type="submit"]:active {
   color: #FFF;
   text-align: center;
 }
+.row {
+    padding-bottom: 10px;
+}
 /*
-button.social-signin {
+input.social-signin {
   margin-bottom: 20px;
   width: 220px;
   height: 36px;
@@ -129,13 +150,13 @@ button.social-signin {
   cursor: pointer;
 }
 
-button.social-signin:hover,
-button.social-signin:focus {
+input.social-signin:hover,
+input.social-signin:focus {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
   transition: 0.2s ease;
 }
 
-button.social-signin:active {
+input.social-signin:active {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
   transition: 0.2s ease;
 }

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Starter xmlns:xlink="http://www.w3.org/1999/xlink">
+
+<food title="Murg Makhani" id = 'Murg'>
+  <description
+  xlink:type="simple"
+  xlink:href="chicken.gif"
+  xlink:show="new">
+  Murg Makhani (butter chicken) is one of the top orders at any Indian restaurant in the West and for good reason—it is delicious. This sultry poultry dish tastes great with kaali daal (black lentils), naan, and a green salad.
+  </description>
+</food>
+
+<food title="Pot Butter Chicken" id='Butter'>
+  <description
+  xlink:type="simple"
+  xlink:href="Butter.gif"
+  xlink:show="new">
+ It has all the delicious flavors of butter, cream, tomatoes, garlic, and spices like garam masala, cumin, ginger, and coriander without the need for marinating. 
+  </description>
+</food>
+
+</Starter>

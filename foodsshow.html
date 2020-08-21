@@ -20,7 +20,7 @@ function myFunction(xml) {
     var x, i, xmlDoc, txt;
     xmlDoc = xml.responseXML;
     table = "<tr><th>name</th><th>price</th><th>rating</th></tr>";
-    x = xmlDoc.getElementsByTagName('Mocktail');
+    x = xmlDoc.getElementsByTagName('food');
    
     for (i = 0 ; i <x.length; i++) {
        table += "<tr><td>" + 
