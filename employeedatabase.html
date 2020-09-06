@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<title>Cinnamon's Restaurant</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="css/mystyle.css">
+ <link rel="stylesheet" href="css/bootstrap.min.css">
+ 
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
+.w3-bar-block .w3-bar-item {padding:20px}
+ th {background-color:#000; color:#fff}
+th,td {padding:10px}
+
+tr:nth-child(odd) {
+    background-color: #f2f2f2  
+    color:#000;    
+}
+</style>
+<body style="background-color: #ffffff">
+  <nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
+ 
+  <a href="#food" onclick="w3_close()" class="w3-bar-item w3-button" style="background-color: #cccccc">Home</a>
+  <a href="blog.html" onclick="w3_close()" class="w3-bar-item w3-button">Blog</a>
+   <a href="javascript:void(0)" onclick="w3_close()"
+  class="w3-bar-item w3-button">Close Menu</a>
+</nav>
+<!-- Top menu -->
+<div class="w3-top">
+  <div class="w3-white w3-xlarge" style="max-width:100%;margin:auto; background-color: #b4f2e1;">
+    <div class="w3-button w3-padding-16 w3-left"> 
+<img src="meat.png" width="40px" height="35px" alt="LOGO" onclick="w3_open()">
+
+    </div>
+    <div class="w3-button w3-right w3-padding-16">Contact Us</div>
+    <a style="color: black;" href="Menu.html"><div class="w3-button w3-right w3-padding-16" style="margin-right: 20px">our  Menu</div></a>
+    <div class="w3-center w3-padding-16" style="margin-left: 18%; font-size: 30px;">Cinnamon's Restaurant</div>
+  </div>
+</div>
+<br>
+<br>
+<h3 style="margin-top: 90px; text-align: center;">Cinnamon's Team</h3>
+<br>
+    <div style="text-align: center;display: flex;
+  justify-content: center;"id="tblEmployee"></div>
+
+    <br />
+    <br />
+  
+<!-- !PAGE CONTENT! -->
+
+
+<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+	<div class="w3-container w3-padding-32 w3-center" >  
+ 
+
+  
+  
+  
+  <hr id="about">
+  <!-- Footer -->
+  <footer class="panel-footer" style="color: #000000;  width: 100%;" >
+    <div class="container-fluid"style="width: 100%;">
+      <div class="row">
+        <section id="hours" class="col-sm-4">
+          
+          <span>Hours</span><br>
+          <ul style="list-style-type: square">
+          <li>Sun-Thurs: 11:15am - 2:30pm</li>
+          <li>Saturday Closed</li>
+          <ul>
+        
+
+        </section>
+        <section id="Address" class="col-sm-4">
+          <dl>
+          <dt>Address:</dt>
+          <dd>Sushila Enclave, Lowadih Chowk, Purulia Road, Kantatoli, Ranchi<dd><b>*Deliver available within 3-4 miles, with minimum order of 15EUR plus 1EUR charge for all deliveries</b>
+          
+        </section>
+        <section id="testimonials" style="font-style: italic;" class ="col-sm-4">
+          <p> "The best Spanish restaurant We've been to! And that's saying a lot, Since We've been to many!"</p>
+          <p>"Amazing food! Great Service! couldn't ask for more! we'll be back again and again to serve you!"</p>
+        </section>
+  </div>
+  <div class="text-center" style="float: right;">&copy; Cinnamon's Restauran Since 2000</div>
+    
+
+  </footer>
+  
+
+<!-- End page content -->
+</div>
+
+<script>
+  var canvas = document.getElementById('myCanvas');
+      var context = canvas.getContext('2d');
+      var imageObj = new Image();
+
+      imageObj.onload = function() {
+        context.drawImage(imageObj, 42, 0);
+      };
+      imageObj.src = 'chef.jpg';
+
+
+      function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+    </script>
+
+    
+   <script src="employee.js"></script> 
+
+</body>
+</html>
