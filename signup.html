@@ -1,15 +1,27 @@
-<!--With text input, radio button input, Check box, drop down list with pre selected value, password input, and Input type date – with date picker – along with possible attributes for each. Demonstrate any five form elements apart from input types specific to HTML5.-->
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+  <title></title>
   <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/mdb.min.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="signup.js"></script>
  <link rel="stylesheet" href="css/mystyle.css">
  
 <meta name="viewport" content="width=device-width, initial-scale=1">
  <link rel="stylesheet" href="css/signupstyles.css">
+ <!-- JQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/5.4.0/bootbox.min.js"></script>
+
+
  <style type="text/css">
  
 
@@ -26,34 +38,38 @@
 <img src="meat.png" width="40px" height="35px" alt="LOGO">
 </a>
     </div>
-    <div class="w3-button w3-right w3-padding-16">Delivery</div>
-    <div class="w3-button w3-right w3-padding-16" style="margin-right: 20px">our  Menu</div>
+    <a style="color: black;" href="contactus.html"><div class="w3-button w3-right w3-padding-16">Contact Us</div></a>
+    <a style="color: black;" href="Menu.html"><div class="w3-button w3-right w3-padding-16" style="margin-right: 20px">our  Menu</div></a>
     <div class="w3-center w3-padding-16" style="margin-left: 14%">Cinnamon's Restaurant</div>
   </div>
 </div>
   
-	<div id="login-box">
+  <div id="login-box">
     <div class="left">
-      <img src="images/coworkpage.jpg" style="box-shadow: 5px 5px 5px 5px #e0dede; margin-top: 60px; opacity:  " width="400px"
-       height="700px">
+      <img id="cowork" src="images/coworkpage.jpg" style="box-shadow: 5px 5px 5px 5px #e0dede; margin-top: 60px; opacity:  " width="400px"
+       height="800px">
     
   </div>
   <div class="right">
     <h1 class="animated fadeInLeft"><u>Book Your Space</u></h1>
     <form name="contactForm" onsubmit="return validateForm()" action="Confirmation.html" method="post">
-    <div class="row">
-        <input type="text" name="name" placeholder="Name">
+    <div class="row md-form">
+        <input  class="form-control" id='name'type="text" name="name">
+        <label for="name">Name</label>
         <span class="error" id="nameErr"></span>
     </div>
-    <div class="row">
+    <div style="margin-top: -20px;" class="row md-form">
     
-        <input type="text" name="email" placeholder="E-mail">
+        <input class="form-control" id='EmailID' type="text" name="email">
+        <label for="EmailID">Email ID</label>
         <span class="error" id="emailErr"></span>
     </div>
-    <div class="row">
-        <input type="text" name="mobile" maxlength="10" placeholder="Mobile No">
+    <div  style="margin-top: -20px;" class="row md-form">
+        <input class="form-control" id= "mobile" type="text" name="mobile" maxlength="10">
+         <label for="mobile">Mobile No</label>
         <span class="error" id="mobileErr"></span>
     </div>
+    
     <div class="row">
       <label for="Purpose">Occupation:</label>
 
@@ -67,6 +83,7 @@
         </select>
         <span class="error" id="occupationErr"></span>
     </div>
+ 
     <div class="row">
         
           <p>Choose a time for your space:*</p>
@@ -96,7 +113,14 @@
     <div class="row">
         <input type="submit" value="Submit">
     </div>
+
 </form>
+<a class="btn-floating btn-lg btn-fb" type="button" role="button"><i class="fab fa-facebook-f"></i></a>
+</div>
+<script type="text/javascript">
+    $('#cowork').addClass('animated flipInX');
+</script>
+
     
 
 </body>

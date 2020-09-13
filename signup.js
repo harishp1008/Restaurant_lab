@@ -86,7 +86,7 @@ function validateForm() {
     } else {
         // Creating a string from input data for preview
         var dataPreview = "You've entered the following details: \n" +
-                          "Full Name: " + name + "\n" +
+                          "Name: " + name + "\n" +
                           "Email Address: " + email + "\n" +
                           "Mobile Number: " + mobile + "\n" +
                           "occupation: " + occupation + "\n" +
@@ -94,9 +94,10 @@ function validateForm() {
         if(ammenities.length) {
             dataPreview += "ammenities: " + ammenities.join(", ");
         }
+        console.log(dataPreview)
         // Display input data in a dialog box before submitting the form
         //alert(dataPreview);
-        if(confirm(dataPreview)){
+        if(confirm('Are you Sure?','dataPreview')){
 
         }
         else {
