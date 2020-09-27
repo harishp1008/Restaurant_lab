@@ -97,7 +97,7 @@ function validateForm() {
         console.log(dataPreview)
         // Display input data in a dialog box before submitting the form
         //alert(dataPreview);
-        if(confirm('Are you Sure?','dataPreview')){
+        if(confirm(dataPreview)){
 
         }
         else {
