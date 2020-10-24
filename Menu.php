@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<?php include 'Menu_data.php';?>
+<head>
+  <title>Cinnamon's Menu Card</title>
+  <meta charset="utf-8">
+    
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/mystyle.css">
+
+   <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/mdb.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+   
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular-animate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
+  <script src="MenuScript.js"></script>
+</head>
+<style type="text/css">
+  .cart{
+  position: absolute;
+  top: 800px;
+  right: 16px;
+margin-right: 70px;
+  overflow: auto;
+  height: 700px;
+  width: 640px;
+  padding:10px 60px 40px 60px;
+  
+}
+.tr{
+  font-weight: bold;
+}
+  th{
+    text-align: center;
+    font-weight: bold;
+
+  }
+.table{
+  width: 600px;
+
+}
+p
+{
+	font-style:  italic;
+}
+
+.table {
+  width: 700px;
+}
+
+.on-sale {
+  color: red;
+}
+
+.qty {
+  width: 60px;
+}
+
+.animate-repeat2 {
+  line-height:40px;
+  list-style:none;
+  box-sizing:border-box;
+}
+
+.animate-repeat2.ng-move,
+.animate-repeat2.ng-enter,
+.animate-repeat2.ng-leave {
+  -webkit-transition:all linear 0.5s;
+  transition:all linear 0.5s;
+}
+
+.animate-repeat2.ng-leave.ng-leave-active,
+.animate-repeat2.ng-move,
+.animate-repeat2.ng-enter {
+  opacity:0;
+  max-height:0;
+}
+
+.animate-repeat2.ng-leave,
+.animate-repeat2.ng-move.ng-move-active,
+.animate-repeat2.ng-enter.ng-enter-active {
+  opacity:1;
+  max-height:40px;
+
+}
+</style>
+<body ng-app="myApp" ng-controller="myController">
+  <nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
+ 
+  <a href="#food" onclick="w3_close()" class="w3-bar-item w3-button">Home</a>
+  <a href="blog.html" onclick="w3_close()" class="w3-bar-item w3-button">Blog</a>
+   <a href="javascript:void(0)" onclick="w3_close()"
+  class="w3-bar-item w3-button">Close Menu</a>
+</nav>
+<!-- Top menu -->
+<div class="w3-top">
+  <div class="w3-white w3-xlarge" style="max-width:100%;margin:auto; background-color: #b4f2e1;">
+    <div class="w3-button w3-padding-16 w3-left"> 
+<img src="meat.png" width="40px" height="35px" alt="LOGO" onclick="w3_open()">
+
+    </div>
+    <div class="w3-button w3-right w3-padding-16">Contact Us</div>
+    <div class="w3-button w3-right w3-padding-16" style="margin-right: 20px; background-color: #cccccc;">our  Menu</div>
+    <div class="w3-center w3-padding-16" style="margin-left: 14%">Cinnamon's Restaurant</div>
+  </div>
+</div>
+  
+  <div id="myCarousel" class="carousel slide" data-ride="carousel" style="width: 100%">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="new.jpg" alt="Los Angeles" style="width:100%;">
+        <div class="carousel-caption">
+        <h3>Opened New Restaurant</h3>
+        <p>There's say in spain</p>
+        <p>"Desayuna mucho, come más, cena poco y vivirás"</p>
+        <a style="margin-left: 190px;" href="" title="Button border blue/green" class="button btnBorder btnBlueGreen">Know More</a>
+      </div>
+      </div>
+
+      <div class="item">
+        <img src="grandopen.jpg" alt="Chicago" style="width:100%;">
+        <div class="carousel-caption">
+        <h3>Check Out Special Deal</h3>
+        <p>Beautiful flowers in Kolymbari, Crete.</p>
+        <a style="margin-left: 190px;" href="" title="Button border blue/green" class="button btnBorder btnBlueGreen">Know More</a>
+      </div>
+      </div>
+    
+      <div class="item">
+        <img src="customer.jpg" alt="New york" style="width:100%;">
+        <div class="carousel-caption">
+        <h3>Flowers</h3>
+        <p>Beautiful flowers in Kolymbari, Crete.</p>
+        <a style="margin-left: 190px;" href="" title="Button border blue/green" class="button btnBorder btnBlueGreen">Know More</a>
+      </div>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  <h2 style="text-align: center;"><b>Menu Card</b></h2> 
+  <hr>
+ 
+<div class="container"  >
+  <h2><b>Category</b></h2>
+<p> <i class="fas fa-utensils" style="margin-right: 10px;"></i>Check out Delicious dishes sepcially made for U</p>
+<!-- Medium input -->
+<div class="md-form" style="width: 20%;">
+  <input type="text" ng-model="searchText" placeholder="search Here" id="inputMDEx" class="form-control">
+  <label for="inputMDEx"></label>
+</div>
+
+
+  <ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#home">Main Course</a></li>
+    <li><a data-toggle="tab" href="#menu1">Starter</a></li>
+    <li><a data-toggle="tab" href="#menu2">Breakfast</a></li>
+    <li><a data-toggle="tab" href="#menu3">Desert</a></li>
+  </ul>
+
+  <div class="tab-content" >
+    <div id="home" class="tab-pane fade in active">
+<h3><b>Main Course</b></h3>
+ <table class="table table-hover">
+        <tr>
+          <th>Food Name</th>
+          <th>Description</th>
+          <th>Price</th>
+          <th class="qty">Qty</th>
+          <th>Total</th>
+        </tr>
+        <tr class="animate-repeat" ng-repeat="item in maincourse | filter:searchText | orderBy:'category' ">
+          <td>{{ item.category }}</td>
+          <td>{{ item.description }}</td>
+          <td ng-class="{ 'on-sale' : item.onSale }">{{ item.price | currency }}</td>
+          <td><input type="number" ng-model="item.qty" class="qty"></td>
+          <td>{{ item.qty * item.price | currency }}</td>
+          <td>
+            <button class="btn btn-primary px-3" ng-click="addItem(item)"><i class="fas fa-shopping-cart"></i></button></td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="menu1" class="tab-pane fade">
+     <h3><b>Starter</b></h3>
+       <table class="table table-hover">
+        <tr>
+          <th>Food Name</th>
+          <th>Description</th>
+          <th>Price</th>
+          <th class="qty">Qty</th>
+          <th>Total</th>
+        </tr>
+        <tr class="animate-repeat" ng-repeat="item in Starter | filter:searchText | orderBy:'category' ">
+          <td>{{ item.category }}</td>
+          <td>{{ item.description }}</td>
+          <td ng-class="{ 'on-sale' : item.onSale }">{{ item.price | currency }}</td>
+          <td><input type="number" ng-model="item.qty" class="qty"></td>
+          <td>{{ item.qty * item.price | currency }}</td>
+          <td>
+            <button class="btn btn-primary px-3" ng-click="addItem(item)"><i class="fas fa-shopping-cart"></i></button></td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="menu2" class="tab-pane fade">
+      <h3><b>Breakfast</b></h3>
+      <table class="table table-hover">
+        <tr>
+          <th>Food Name</th>
+          <th>Description</th>
+          <th>Price</th>
+          <th class="qty">Qty</th>
+          <th>Total</th>
+        </tr>
+        <tr class="animate-repeat" ng-repeat="item in breakfast | filter:searchText | orderBy:'category' ">
+          <td>{{ item.category }}</td>
+          <td>{{ item.description }}</td>
+          <td ng-class="{ 'on-sale' : item.onSale }">{{ item.price | currency }}</td>
+          <td><input type="number" ng-model="item.qty" class="qty"></td>
+          <td>{{ item.qty * item.price | currency }}</td>
+          <td>
+            <button class="btn btn-primary px-3" ng-click="addItem(item)"><i class="fas fa-shopping-cart"></i></button></td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="menu3" class="tab-pane fade">
+      <h3><b>Desert</b></h3>
+      <table class="table table-hover">
+        <tr>
+          <th>Food Name</th>
+          <th>Description</th>
+          <th>Price</th>
+          <th class="qty">Qty</th>
+          <th>Total</th>
+        </tr>
+        <tr class="animate-repeat" ng-repeat="item in desert | filter:searchText | orderBy:'category' ">
+          <td>{{ item.category }}</td>
+          <td>{{ item.description }}</td>
+          <td ng-class="{ 'on-sale' : item.onSale }">{{ item.price | currency }}</td>
+          <td><input type="number" ng-model="item.qty" class="qty"></td>
+          <td>{{ item.qty * item.price | currency }}</td>
+          <td>
+            <button class="btn btn-primary px-3" ng-click="addItem(item)"><i class="fas fa-shopping-cart"></button></td>
+        </tr>
+      </table>
+    </div>
+    
+  </div>
+</div>
+<div class='cart card booking-card animated tada delay-2s' style="background-color: #eeeeee; height: 600px;
+  width: 30%;">
+  <h2><b>Your Cart:</b></h2>
+  <hr style="background-color:black;display: block;">
+      <ul>
+        <li Style="margin-left:-40px;"class="animate-repeat" ng-repeat="item in cart | orderBy:'category'">
+          <span>{{ item.qty + ' x ' + item.category + ' = ' + (getCost(item) | currency) }}</span>
+          <button Style="border: none;"class="btn-floating btn-sm red" ng-click="removeItem(item);"><i Style ="color:#fff;"class="fas fa-times"></i></button>
+          </br>
+          </br>
+        </li>
+      </ul>
+       <hr style="background-color:black;display: block;">
+      <h3><b>Total: {{ getTotal() | currency }}</b></h3>
+      <button class="btn btn-danger px-3" ng-click="clearCart();"><i style="margin-right: 10px;" class="fas fa-cart-arrow-down"></i>clear cart</button>
+</div>
+
+<hr id="about">
+  <!-- Footer -->
+  <footer class="panel-footer" style="color: #000000;  width: 100%;" >
+    <div class="container-fluid"style="width: 100%;">
+      <div class="row">
+        <section id="hours" class="col-sm-4">
+          
+          <span>Hours</span><br>
+          <ul style="list-style-type: square">
+          <li>Sun-Thurs: 11:15am - 2:30pm</li>
+          <li>Saturday Closed</li>
+          <ul>
+        
+
+        </section>
+        <section id="Address" class="col-sm-4">
+          <dl>
+          <dt>Address:</dt>
+          <dd>Sushila Enclave, Lowadih Chowk, Purulia Road, Kantatoli, Ranchi<dd><b>*Deliver available within 3-4 miles, with minimum order of 15EUR plus 1EUR charge for all deliveries</b>
+          
+        </section>
+        <section id="testimonials" style="font-style: italic;" class ="col-sm-4">
+          <p> "The best Spanish restaurant We've been to! And that's saying a lot, Since We've been to many!"</p>
+          <p>"Amazing food! Great Service! couldn't ask for more! we'll be back again and again to serve you!"</p>
+        </section>
+  </div>
+  <div class="text-center" style="float: right;">&copy; Cinnamon's Restauran Since 2000</div>
+    
+
+  </footer>
+  
+
+  
+
+</body>
+</html>
+
+
+
+

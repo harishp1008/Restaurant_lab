@@ -6,7 +6,7 @@
   <meta charset="UTF-8">
   <link rel="stylesheet" href="css/mdb.min.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<script src="contactus.js"></script>
+
  <link rel="stylesheet" href="css/mystyle.css">
 
  <link rel="stylesheet" href="css/contactus.css">
@@ -62,13 +62,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       $nameErr = "Only letters and white space allowed"; 
     }
   }
-  if (empty($_POST["name"])) {
-    $mobileError = "Name is required";
+  if (empty($_POST["subject"])) {
+    $mobileError = "subject is required";
   } else {
-    $mobile = test_input($_POST["mobile"]);
+    $mobile = test_input($_POST["subject"]);
     // check if name only contains letters and whitespace
-    if (!preg_match('/^[0-9]{10}+$/', $mobile)) {
-      $mobileError = "10 digit Number"; 
+    if (!preg_match('/^[a-zA-Z ]*$/', $mobile)) {
+      $mobileError = "Subject is required"; 
     }
   }
   if (empty($_POST["email"])) {
@@ -80,7 +80,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       $emailError = "Invalid email format"; 
     }
   }
+
+ if (!empty($_POST["email"])) {
+    function myFunction() {
+  confirm("Press a button!");
 }
+  }
+   
+}
+
 function test_input($data) {
   $data = trim($data);
   $data = stripslashes($data);
@@ -88,31 +96,31 @@ function test_input($data) {
   return $data;
 }
 ?>
-  <form name="myForm" method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>">  
+  <form name="myForm" method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>" onsubmit="return myFunction();">  
 
      <div id='name' class="md-form">
       
-        <input type="text" id="form104" class="form-control" onblur="validateForm1()" required>
+        <input type="text" id="form104" name ="name" class="form-control" value="<?php echo $name;?>">
         <label for="form104">Your name</label>
-        <span class="error" id="nameErr"></span>
+        <span class="error"> <?php echo $nameErr;?></span>
       </div>
    <div class="md-form">
   
-        <input type="text" id="form105" class="form-control" onblur="validateForm()" required>
+        <input type="text" id="form105" name="email" class="form-control" value="<?php echo $email;?>">
         <label for="form105">Your email</label>
-        <span class="error" id="emailErr"></span>
+        <span class="error"> <?php echo $emailError;?></span>
 
       </div>
       <div class="md-form">
   
-        <input type="text" id="form106" class="form-control" required>
+        <input type="text" id="form106" name="subject" class="form-control" value="<?php echo $mobile;?>">
         <label for="form106">Subject</label>
-        <span class="error" id="subErr"></span>
+        <span class="error"> <?php echo $mobileError;?></span>
       </div>
     <div class="md-form">
-  <textarea id="textarea-char-counter" class="form-control md-textarea" length="170" rows="3" required></textarea>
+  <textarea id="textarea-char-counter" class="form-control md-textarea" length="170" rows="3" required ></textarea>
   <label for="textarea-char-counter">Type your text</label>
-  <span class="error" id="descripErr"></span>
+  
   <br>
   <span style="font-size:15px; float: right;margin-right: 80px; "id="rchars">300 characters remaining</span>
 </div>
@@ -120,7 +128,7 @@ function test_input($data) {
 
     <div class="row">
 
-       <button  style="margin-left:70px;" type="submit" onclick="setTimeout(myFunction, 3000);" id="btn-one" class="btn btn-primary mt-5" >
+       <button  style="margin-left:70px;" type="submit" onclick="setTimeout(myFunction, 3000);" id="btn-one" class="btn btn-primary mt-5" data-toggle="modal" data-target="#basicExampleModal" >
   Send
 </button>
     </div>
@@ -155,15 +163,17 @@ $('textarea').keyup(function() {
   var textlen = maxLength - $(this).val().length;
   $('#rchars').text(textlen);
 });
-
-function myFunction() {
-  alert('Your request has successfully submitted!');
+    function myFunction() {
+       var x = document.forms["myForm"]["email"].value;
+  if (x !== "") {
+    confirm("Dear customer, thanks for reaching out!,We will look over your message and get back to you by tomorrow ");
+    return false;
+  }
 }
 
 
-
-
     </script>
+
 
 </body>
 </html>

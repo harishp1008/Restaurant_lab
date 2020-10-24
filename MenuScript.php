@@ -1,13 +1,22 @@
-
-
+<?php 
 angular.module('myApp', ['ngAnimate']);
 
 angular.module('myApp')
-.controller('myController', function ($scope,$http) {
-  $http.get('maincourse.json')
-  .success(function(data){
-  $scope.maincourse = data; 
-
+.controller('myController', function ($scope) {
+  
+  $scope.maincourse = [
+    { 'id' :  1, 'category' : "Tuscan Tomato Bread Soup with Steameded Mussels", 'description' : "There are many versions of bread soup; this one, based on traditional peasant fare, is as thick as a bread pudding.",   'price' :   2.99, 'qty' : 1 },
+    { id :  2, category : "Mushroom Risotto", description : "A plateful of buttery risotto with the goodness of mushrooms. A healthy bowl of mushroom risotto has benefits more than you can think.",   price :   2.99, qty : 1},
+    { id :  3, category : "Gourmet Mushroom Risotto",   description : "Authentic Italian-style risotto cooked the slow and painful way, but oh so worth it. Complements grilled meats and chicken",     price :   6.99, qty : 1 },
+    { id :  4, category : "Tender Italian Baked Chicken",   description : "Flavorful and moist baked chicken.",       price :  12.99, qty : 1 },
+    { id :  5, category : "Pesto Pasta",        description : "Easy to make, but full of flavor! Good hot or cold.",          price :  1.95, qty : 1 },
+    { id :  6, category : "Spinach Lasagna III",        description : "Fresh spinach and plenty of ricotta, Romano and mozzarella make this a cheesy and hearty dish. This lasagna ca",            price :  1.95, qty : 1 },
+    { id :  7, category : "Spaghetti Aglio e Olio", description : "No two spaghetti aglio e olio recipes are alike, but this one is pretty true to the",  price :  1.28, qty : 1 },
+    { id :  8, category : "Manicotti", description : "Delicious! Serve with a crispy salad and garlic bread, and you'll have a dish your family will love! The kids like to help",  price :  3.2, qty : 1 },
+    { id :  9, category : "Tilapia Scaloppine",         description : "I often eat at Macaroni Grill and order their Pollo Scaloppine. I thought I mig",        price : 1.20, qty : 1 },
+    { id : 10, category : "Prune and Olive Chicken",         description : "My version of chicken parmesan is a little different than what they do in the",        price : 2.2, qty : 1 },
+    { 'id' : 11, 'category' : "Chicken Parmesan",         'description' : "A taste of the Mediterranean in one delicious baked chicken dish.",        'price' : 1.22, 'qty' : 2 }
+  ];
   $scope.Starter = [
     { id :  1, category : "Oyster Mushrooms", description : "In this elegant salad, he tosses lightly sautéed oyster mushrooms with arugula and tops them with thin slices of prosciutto and Pecorino Toscano.",   price :   2.99, qty : 1 },
     { id :  2, category : "Crostini with Ricotta", description : "Figs and salami are assertive ingredients to pair together on a little crostini, yet the result is subtle, delicate and delicious.",   price :   2.99, qty : 1},
@@ -17,7 +26,6 @@ angular.module('myApp')
     { id :  6, category : "Burrata",        description : "Roasted tomatoes and a gorgeous ball of fresh, creamy burrata cheese is the taste of summer in a simple starter.",            price :  1.95, qty : 1 },
     { id :  7, category : "Russell’s asparagus", description : "Food writer Russell Norman finds his inspiration in Italy’s beautiful cities and this bruschetta recipe, with asparagus and mint, reflects everything he loves about Italian cuisine",  price :  1.28, qty : 1 }
   ];
-  });
 
    $scope.breakfast = [
     { id :  1, category : "Italian Brunch Torte", description : " breakfast bake with a salad of mixed greens and tomato wedges",   price :   2.99, qty : 1 },
@@ -78,3 +86,4 @@ angular.module('myApp')
   };
   
 });
+?>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Cinnamon's Menu Card</title>
+  <meta charset="utf-8">
+    
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/mystyle.css">
+
+   <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/mdb.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+   
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular-animate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
+  <script src="MenuScript.js"></script>
+</head>
+<style type="text/css">
+  
+</style>
+<body>
+   <nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
+ 
+  <a href="#food" onclick="w3_close()" class="w3-bar-item w3-button">Home</a>
+  <a href="blog.html" onclick="w3_close()" class="w3-bar-item w3-button">Blog</a>
+   <a href="javascript:void(0)" onclick="w3_close()"
+  class="w3-bar-item w3-button">Close Menu</a>
+</nav>
+<!-- Top menu -->
+<div class="w3-top">
+  <div class="w3-white w3-xlarge" style="max-width:100%;margin:auto; background-color: #b4f2e1;">
+    <div class="w3-button w3-padding-16 w3-left"> 
+<img src="meat.png" width="40px" height="35px" alt="LOGO" onclick="w3_open()">
+
+    </div>
+    <div class="w3-button w3-right w3-padding-16">Contact Us</div>
+    <div class="w3-button w3-right w3-padding-16" style="margin-right: 20px; background-color: #cccccc;">our  Menu</div>
+    <div class="w3-center w3-padding-16" style="margin-left: 14%">Cinnamon's Restaurant</div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Sign in</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <i class="fas fa-envelope prefix grey-text"></i>
+          <input type="email" id="defaultForm-email" class="form-control validate">
+          <label data-error="wrong" data-success="right" for="defaultForm-email">Your email</label>
+        </div>
+
+        <div class="md-form mb-4">
+          <i class="fas fa-lock prefix grey-text"></i>
+          <input type="password" id="defaultForm-pass" class="form-control validate">
+          <label data-error="wrong" data-success="right" for="defaultForm-pass">Your password</label>
+        </div>
+
+      </div>
+      <div class="modal-footer d-flex justify-content-center">
+        <button class="btn btn-default">Login</button>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+      <br><br><br>
+<div class="text-center">
+  <a href="" class="btn btn-default btn-rounded mb-4" data-toggle="modal" data-target="#modalLoginForm">Launch
+    Modal Login Form</a>
+</div>
+
+<hr id="about">
+  <!-- Footer -->
+  <footer class="panel-footer" style="color: #000000;  width: 100%;" >
+    <div class="container-fluid"style="width: 100%;">
+      <div class="row">
+        <section id="hours" class="col-sm-4">
+          
+          <span>Hours</span><br>
+          <ul style="list-style-type: square">
+          <li>Sun-Thurs: 11:15am - 2:30pm</li>
+          <li>Saturday Closed</li>
+          <ul>
+        
+
+        </section>
+        <section id="Address" class="col-sm-4">
+          <dl>
+          <dt>Address:</dt>
+          <dd>Sushila Enclave, Lowadih Chowk, Purulia Road, Kantatoli, Ranchi<dd><b>*Deliver available within 3-4 miles, with minimum order of 15EUR plus 1EUR charge for all deliveries</b>
+          
+        </section>
+        <section id="testimonials" style="font-style: italic;" class ="col-sm-4">
+          <p> "The best Spanish restaurant We've been to! And that's saying a lot, Since We've been to many!"</p>
+          <p>"Amazing food! Great Service! couldn't ask for more! we'll be back again and again to serve you!"</p>
+        </section>
+  </div>
+  <div class="text-center" style="float: right;">&copy; Cinnamon's Restauran Since 2000</div>
+    
+
+  </footer>
+  
+
+  
+
+</body>
+</html>
+
+
+
+

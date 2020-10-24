@@ -53,12 +53,33 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
 }
 </style>
 <body>
-<div id="mySidenav" class="sidenav">
+<div style="background-color: #686d76; "id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="Menu.html">Our Menu</a>
-  <a href="#">Services</a>
-  <a href="#">Clients</a>
-  <a href="contactus.html">Contact</a>
+ <div>
+  <img class="rounded-circle" style="height: 60px;width: 60px;border-radius: 50%;"alt="100x100" src="images/billgates.jpg"
+          data-holder-rendered="true" style="border-radius: 50%;">
+         <p style="font-size: 20px;color: #e8ffff;"> 
+          <?php session_start();
+          if($_SESSION['username']!=""){
+         echo "Welcome<br> " .$_SESSION['username'];
+         if(isset($_POST['remember'])){
+    setcookie('name',$name,time()+60*60*7);
+    setcookie('pass',$pass,time()+60*60*7);
+    
+  }
+       }
+       else{
+        header('location:mainpage.php');
+
+       }
+?></p>
+<hr>
+        </div>
+  <a style="color: #ecf4f3;" href="admin_menu.php">Menu customize</a>
+  <a style="color: #ecf4f3;"href="#">Blogs</a>
+  <a style="color: #ecf4f3;"href="#">Catering Services</a>
+  <a style="color: #ecf4f3;"href="contactus.html">Contact</a>
+  <a style="color: #ecf4f3;" href='mainpage.php'>Logout</a>
 </div>
 
 
@@ -69,7 +90,6 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
 <img src="meat.png" width="40px" height="35px" onclick="openNav()" alt="LOGO" >
 
     </div>
-    <a style="color: black;" href="customerlogin.php"><div class="w3-button w3-right w3-padding-16">Login</div></a>
     <a style="color: black;" href="Menu.html"><div class="w3-button w3-right w3-padding-16" style="margin-right: 20px">our  Menu</div></a>
     <div class="w3-center w3-padding-16" style="margin-left: 18%; font-size: 30px;">Cinnamon's Restaurant</div>
   </div>
